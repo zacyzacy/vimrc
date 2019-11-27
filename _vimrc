@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 filetype plugin indent on
 set nocompatible 
 call plug#begin('~/.vim/plugged')
@@ -6,6 +7,27 @@ Plug 'scrooloose/syntastic'
 Plug 'neoclide/coc.nvim', {'tag': '*', 'branch': 'release'}
 call plug#end()
 
+=======
+"""""""""""""""Vundle
+set nocompatible              " be iMproved, required
+filetype off                  " required
+
+"Non Windows:
+"set rtp+=~/.vim/bundle/Vundle.vim
+"call vundle#begin()
+"Windows:
+set rtp+=$HOME/.vim/bundle/Vundle.vim/
+call vundle#begin('$HOME/.vim/bundle/')
+Plugin 'VundleVim/Vundle.vim'
+"Custom Plugins
+Plugin 'scrooloose/syntastic'
+Plugin 'scrooloose/nerdtree'
+Plugin 'kien/ctrlp.vim'
+"End Custom Plugin
+call vundle#end()            " required
+filetype plugin indent on    " required
+"""""""""""""""End Vundle
+>>>>>>> dc1e15c80daac61138507669c2f7db06204194e7
 "Font
 if has("gui_running")
   if has("gui_gtk2")
@@ -36,6 +58,7 @@ set softtabstop=4   " number of spaces in tab when editing
 set expandtab       " tabs are spaces
 
 "Bindings
+<<<<<<< HEAD
 noremap <C-n> :NERDTreeToggle<CR>
 
 
@@ -167,3 +190,8 @@ nnoremap <silent> <space>j  :<C-u>CocNext<CR>
 nnoremap <silent> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list
 nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
+=======
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
+map <C-n> :NERDTreeToggle<CR>
+>>>>>>> dc1e15c80daac61138507669c2f7db06204194e7
