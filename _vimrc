@@ -44,8 +44,10 @@ noremap <C-z> u<CR>
 vmap <leader>f  <Plug>(coc-format-selected)
 nmap <leader>f  <Plug>(coc-format-selected)
 vmap <leader>c "+y
+nmap <leader>c "+yy
 vmap <leader>y "+y
-vmap <leader>v "+p 
+nmap <leader>y "+yy
+
 
 " if hidden is not set, TextEdit might fail.
 set hidden
