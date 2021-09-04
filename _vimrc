@@ -6,6 +6,9 @@ Plug 'scrooloose/syntastic'
 Plug 'neoclide/coc.nvim', {'tag': '*', 'branch': 'release'}
 call plug#end()
 
+"coc plugins:
+":CocInstall coc-tsserver coc-prettier coc-json coc-css coc-powershell
+
 "Font
 if has("gui_running")
   if has("gui_gtk2")
@@ -37,7 +40,12 @@ set expandtab       " tabs are spaces
 
 "Bindings
 noremap <C-n> :NERDTreeToggle<CR>
-
+noremap <C-z> u<CR>
+vmap <leader>f  <Plug>(coc-format-selected)
+nmap <leader>f  <Plug>(coc-format-selected)
+vmap <leader>c "+y
+vmap <leader>y "+y
+vmap <leader>v "+p 
 
 " if hidden is not set, TextEdit might fail.
 set hidden
