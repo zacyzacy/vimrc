@@ -12,10 +12,10 @@ set.clipboard = "unnamedplus"                -- Copy paste between vim and every
 set.smarttab = true                          -- Makes tabbing smarter will realize you have 2 vs 4
 set.expandtab = true                         -- Converts tabs to spaces
 set.autoindent = true                        -- Good auto indent
-set.autochdir = true                         -- Your working directory will always be the same as your working directory
 set.incsearch = true                         -- Sets incremental search
 set.mouse = 'a'                              -- Enable mouse support
 set.shortmess:append "sI"                    -- Disable nvim intro
+set.smartcase = true                         -- smart case
 vim.cmd [[set nobackup]]                     -- Creates a backup file
 vim.cmd [[set nowritebackup]]                -- Creates a backup file i guess
 vim.cmd [[set formatoptions-=cro]]           -- Stop newline continution of comments
