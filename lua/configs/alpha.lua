@@ -24,44 +24,44 @@ dashboard.section.buttons.val = {
 }
 
 -- Luavim Ascii Art
-dashboard.section.header.val = {
-    [[██╗     ██╗   ██╗  █████╗  ██╗   ██╗ ██╗ ███╗   ███╗]],
-    [[██║     ██║   ██║ ██╔══██╗ ██║   ██║ ██║ ████╗ ████║]],
-    [[██║     ██║   ██║ ███████║ ██║   ██║ ██║ ██╔████╔██║]],
-    [[██║     ██║   ██║ ██╔══██║ ╚██╗ ██╔╝ ██║ ██║╚██╔╝██║]],
-    [[███████╗╚██████╔╝ ██║  ██║  ╚████╔╝  ██║ ██║ ╚═╝ ██║]],
-    [[╚══════╝ ╚═════╝  ╚═╝  ╚═╝   ╚═══╝   ╚═╝ ╚═╝     ╚═╝]],
-}
-
--- Layout for luavim ascii art
-dashboard.config.layout = {
-    { type = "padding", val = 6 },
-    dashboard.section.header,
-    { type = "padding", val = 2 },
-    dashboard.section.buttons,
-    { type = "padding", val = 1 },
-    dashboard.section.footer,
-}
-
--- -- Neovim ascii art
 -- dashboard.section.header.val = {
---     [[███╗   ██╗ ███████╗ ██████╗  ██╗   ██╗ ██╗ ███╗   ███╗]],
---     [[████╗  ██║ ██╔════╝██╔═══██╗ ██║   ██║ ██║ ████╗ ████║]],
---     [[██╔██╗ ██║ █████╗  ██║   ██║ ██║   ██║ ██║ ██╔████╔██║]],
---     [[██║╚██╗██║ ██╔══╝  ██║   ██║ ╚██╗ ██╔╝ ██║ ██║╚██╔╝██║]],
---     [[██║ ╚████║ ███████╗╚██████╔╝  ╚████╔╝  ██║ ██║ ╚═╝ ██║]],
---     [[╚═╝  ╚═══╝ ╚══════╝ ╚═════╝    ╚═══╝   ╚═╝ ╚═╝     ╚═╝]],
+--     [[██╗     ██╗   ██╗  █████╗  ██╗   ██╗ ██╗ ███╗   ███╗]],
+--     [[██║     ██║   ██║ ██╔══██╗ ██║   ██║ ██║ ████╗ ████║]],
+--     [[██║     ██║   ██║ ███████║ ██║   ██║ ██║ ██╔████╔██║]],
+--     [[██║     ██║   ██║ ██╔══██║ ╚██╗ ██╔╝ ██║ ██║╚██╔╝██║]],
+--     [[███████╗╚██████╔╝ ██║  ██║  ╚████╔╝  ██║ ██║ ╚═╝ ██║]],
+--     [[╚══════╝ ╚═════╝  ╚═╝  ╚═╝   ╚═══╝   ╚═╝ ╚═╝     ╚═╝]],
 -- }
 
--- -- Layout for Neovim ascii art
+-- Layout for luavim ascii art
 -- dashboard.config.layout = {
---     { type = "padding", val = 5 },
+--     { type = "padding", val = 6 },
 --     dashboard.section.header,
 --     { type = "padding", val = 2 },
 --     dashboard.section.buttons,
 --     { type = "padding", val = 1 },
 --     dashboard.section.footer,
 -- }
+
+-- Neovim ascii art
+dashboard.section.header.val = {
+    [[███╗   ██╗ ███████╗ ██████╗  ██╗   ██╗ ██╗ ███╗   ███╗]],
+    [[████╗  ██║ ██╔════╝██╔═══██╗ ██║   ██║ ██║ ████╗ ████║]],
+    [[██╔██╗ ██║ █████╗  ██║   ██║ ██║   ██║ ██║ ██╔████╔██║]],
+    [[██║╚██╗██║ ██╔══╝  ██║   ██║ ╚██╗ ██╔╝ ██║ ██║╚██╔╝██║]],
+    [[██║ ╚████║ ███████╗╚██████╔╝  ╚████╔╝  ██║ ██║ ╚═╝ ██║]],
+    [[╚═╝  ╚═══╝ ╚══════╝ ╚═════╝    ╚═══╝   ╚═╝ ╚═╝     ╚═╝]],
+}
+
+-- Layout for Neovim ascii art
+dashboard.config.layout = {
+    { type = "padding", val = 5 },
+    dashboard.section.header,
+    { type = "padding", val = 2 },
+    dashboard.section.buttons,
+    { type = "padding", val = 1 },
+    dashboard.section.footer,
+}
 
 -- -- Doom Neovim ascii art
 -- dashboard.section.header.val = {
