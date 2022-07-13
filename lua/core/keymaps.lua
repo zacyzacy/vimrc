@@ -12,8 +12,14 @@ vim.g.maplocalleader = " "
 -- Normal Mode --
 -----------------
 
+-- Reset Working Directory
+map("n", "<F2>", ":cd %:h | :echo 'Working Directory Updated' <CR>", {})
+
 -- Close buffer
 map("n", "<leader>w", ":bw<cr>", {})
+
+-- Delete entire word and move to Insert mode
+map("n","<leader>x", "ciw")
 
 -- Mappings for moving through splits
 map("n", "<A-Left>", "<C-w>h", {})

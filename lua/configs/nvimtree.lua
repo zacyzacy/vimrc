@@ -13,6 +13,7 @@ local tree_cb = nvim_tree_config.nvim_tree_callback
 
 -- Nvimtree options
 nvim_tree.setup {
+  respect_buf_cwd = true,
   renderer = {
     root_folder_modifier = ":t",
     icons = {
