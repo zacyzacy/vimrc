@@ -56,7 +56,9 @@ return packer.startup(function(use)
     use "kyazdani42/nvim-tree.lua"           -- A file explorer tree for neovim written in lua
     use "nvim-treesitter/nvim-treesitter"    -- Treesitter Syntax highlighting and abstraction layer
     use "nvim-lualine/lualine.nvim"          -- Fast and easy statusline for neovim
-    use "shaunsingh/nord.nvim"               -- Neovim theme based off of the Nord Color Palette
+    -- use "shaunsingh/nord.nvim"               -- Neovim theme based off of the Nord Color Palette
+    -- use 'folke/tokyonight.nvim'
+    use "savq/melange"
     use "goolord/alpha-nvim"                 -- Lua powered greeter like vim-startify / dashboard-nvim
     use "akinsho/nvim-toggleterm.lua"        -- Plugin to easily toggle a terminal
     use "terrortylor/nvim-comment"           -- Comment toggler for Neovim written in Lua
