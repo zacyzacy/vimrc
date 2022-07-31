@@ -75,3 +75,9 @@ vim.opt.fillchars:append { eob = " " }
 
 -- Disbale Status Line
 -- vim.api.nvim_exec([[ autocmd VimEnter * set laststatus=1]], false)
+
+-- Center screen after search
+vim.cmd([[
+nnoremap n nzzzv
+nnoremap N Nzzzv
+]])

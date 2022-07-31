@@ -16,6 +16,7 @@ set.incsearch = true                         -- Sets incremental search
 set.mouse = 'a'                              -- Enable mouse support
 set.shortmess:append "sI"                    -- Disable nvim intro
 set.smartcase = true                         -- smart case
+set.inccommand = "nosplit"
 vim.cmd [[set nobackup]]                     -- Creates a backup file
 vim.cmd [[set nowritebackup]]                -- Creates a backup file i guess
 vim.cmd [[set formatoptions-=cro]]           -- Stop newline continution of comments
