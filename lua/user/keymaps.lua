@@ -19,6 +19,9 @@ vim.g.mapleader = " "
 -- Normal Mode --
 -----------------
 
+-- Format Code
+keymap("n", "<leader>d", ":lua vim.lsp.buf.formatting_sync()<cr>", {})
+
 -- Reset Working Directory
 keymap("n", "<F2>", ":cd %:h | :echo 'Working Directory Updated' <CR>", {})
 
@@ -57,7 +60,7 @@ keymap("n", "<S-q>", "<cmd>Bdelete!<CR>", opts)
 -- Insert Mode --
 -----------------
 
--- Press jk fast to enter
+-- Press jk fast to enter Normal mode
 keymap("i", "jk", "<ESC>", opts)
 keymap("i", "kj", "<ESC>", opts)
 

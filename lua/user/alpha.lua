@@ -13,11 +13,13 @@ dashboard.section.header.val = {
     [[╚═╝  ╚═══╝ ╚══════╝ ╚═════╝    ╚═══╝   ╚═╝ ╚═╝     ╚═╝]],
 }
 dashboard.section.buttons.val = {
-  dashboard.button("f", " " .. " Find file", ":Telescope find_files <CR>"),
-  dashboard.button("e", " " .. " New file", ":ene <BAR> startinsert <CR>"),
-  dashboard.button("r", " " .. " Recent files", ":Telescope oldfiles <CR>"),
-  dashboard.button("t", " " .. " Find text", ":Telescope live_grep <CR>"),
+  dashboard.button("f", " " .. " Find File", ":Telescope find_files <CR>"),
+  dashboard.button("e", " " .. " New File", ":ene <BAR> startinsert <CR>"),
+  dashboard.button("r", " " .. " Recent Files", ":Telescope oldfiles <CR>"),
+  dashboard.button("t", " " .. " Find Text", ":Telescope live_grep <CR>"),
   dashboard.button("v", " " .. " Config", ":e ~/AppData/Local/nvim/init.lua | cd %:h <CR>"),
+  dashboard.button("u", "דּ " .. "Update Plugins", ":PackerSync<CR>"),
+  dashboard.button("l", " " .. "Language Server Browser", ":LspInstallInfo<CR>"),
   dashboard.button("q", " " .. " Quit", ":qa<CR>"),
 }
 local function footer()
