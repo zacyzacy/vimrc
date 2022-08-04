@@ -58,6 +58,8 @@ lvim.keys.normal_mode["<S-Right>"] = ":bnext<CR>"
 lvim.keys.normal_mode["<S-Left>"] = ":bprevious<CR>"
 -- Comment Block
 lvim.builtin.which_key.mappings["c"] = { "<cmd>lua require('Comment.api').toggle_current_linewise()<CR>", "Comment" }
+lvim.builtin.which_key.vmappings["c"] = { "<ESC><CMD>lua require('Comment.api').toggle_linewise_op(vim.fn.visualmode())<CR>",
+  "Comment" }
 -- Close buffers
 lvim.keys.normal_mode["<S-q>"] = ":BufferClose<CR>"
 -----------------------
