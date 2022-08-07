@@ -13,7 +13,7 @@ null_ls.setup({
         formatting.stylua,
         -- Javascript
         formatting.prettier,
-		diagnostics.xo,
+		-- diagnostics.xo,
         -- Python
 		formatting.black.with({ extra_args = { "--fast" } }),
 		-- diagnostics.pylint,

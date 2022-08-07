@@ -58,14 +58,19 @@ local lsp_flags = {
 	on_attach = on_attach,
 	flags = lsp_flags,
 }
+--#region python
 require("lspconfig")["pyright"].setup({
 	on_attach = on_attach,
 	flags = lsp_flags,
 })
+--#endregion
+--#region typescript/javascript
 require("lspconfig")["tsserver"].setup({
 	on_attach = on_attach,
 	flags = lsp_flags,
 })
+--#endregion
+--#region rust
 require("lspconfig")["rust_analyzer"].setup({
 	on_attach = on_attach,
 	flags = lsp_flags,
@@ -74,6 +79,8 @@ require("lspconfig")["rust_analyzer"].setup({
 		["rust-analyzer"] = {},
 	},
 })
+--#endregion
+--#region Lua
 require("lspconfig").sumneko_lua.setup({
 	settings = {
 		Lua = {
@@ -96,3 +103,4 @@ require("lspconfig").sumneko_lua.setup({
 		},
 	},
 })
+--#endregion
