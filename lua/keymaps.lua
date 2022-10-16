@@ -20,7 +20,7 @@ vim.g.mapleader = " "
 -----------------
 
 -- Format Code with null-ls plugin
-keymap("n", "<leader>d", ":lua vim.lsp.buf.formatting_sync()<cr>", {})
+keymap("n", "<leader>d", ":lua vim.lsp.buf.format()<cr>", {})
 
 -- Reset Working Directory
 keymap("n", "<F2>", ":cd %:h | :echo 'Working Directory Updated' <CR>", {})
