@@ -10,14 +10,14 @@ null_ls.setup({
 	debug = true,
 	sources = {
 		-- Lua
-        formatting.stylua,
-        -- Javascript
-        formatting.prettier,
+		formatting.stylua,
+		-- Javascript
+		formatting.prettier,
 		-- diagnostics.xo,
-        -- Python
+		-- Python
 		formatting.black.with({ extra_args = { "--fast" } }),
 		-- diagnostics.pylint,
-        -- Rust
-        formatting.rustfmt,
+		-- Rust
+		formatting.rustfmt,
 	},
 })
