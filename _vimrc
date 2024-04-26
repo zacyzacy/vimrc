@@ -1,4 +1,6 @@
 " Customizations
+filetype plugin indent on
+set nocompatible 
 colo desert
 scriptencoding utf-8
 syntax enable
