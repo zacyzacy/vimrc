@@ -37,13 +37,20 @@ set expandtab       " tabs are spaces
 
 "Bindings
 noremap <C-n> :NERDTreeToggle<CR>
+"CTRL Z Undo
 noremap <C-z> u<CR>
+"Better (subjective) copy paste
 vmap <leader>c "+y
 nmap <leader>c "+yy
 vmap <leader>y "+y
 nmap <leader>y "+yy 
 map <C-v> "+p
 imap <C-v> <esc>"+p
+"jk to return to normal mode
+imap jk <esc>
+imap kj <esc>
+"Leader / to enter find/replace mode real quick
+nmap <leader>/ :%s/
 
 set encoding=utf-8
 " if hidden is not set, TextEdit might fail.
